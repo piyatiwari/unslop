@@ -1,26 +1,27 @@
 # Unslop
 ### AI Slop Detector
 
-A prose auditor for marketers and knowledge workers. Paste in a draft — an email, a LinkedIn post, a deck, a PRFAQ — and it flags the tics that make writing read as machine-generated, explains why each one is a tell, and coaches you to fix it yourself instead of quietly rewriting it for you.
+Hi! I'm a marketer and I love using AI to get past the blank page and writers block. But I also like my own writing style and cringe at the tell tale signs of AI writing. So I created this - Unslop is a content or prose auditor for marketers and all knowledge workers. Paste in your draft — an email, a LinkedIn post, a deck, a PRFAQ — and it flags the tics that make writing read as machine-generated (aka AI slop), explains why each one is a tell, and coaches you to fix it yourself instead of quietly rewriting it for you (my favorite feature)
 
 ## Why this exists
 
-Most AI-detection tools just slap a percentage on your text and call it a day. That's not useful if you're trying to actually get better at spotting the tells yourself — and it's especially useless if the "detector" then hands you a generic rewrite, which is just slop with the rough edges filed off.
+Most AI-detection tools in the market - free and paid - just slap a percentage on your text and call it a day, some go farther and directly fix it for you. That's not useful if you're trying to actually get better at spotting the tells yourself — and it's especially useless if the "detector" then hands you a generic rewrite, which is just slop with the rough edges filed off.
 
-This skill works differently:
+Unslop skill works differently:
 
-- **It teaches, it doesn't fix.** The default output is a diagnosis — what's wrong and why — not a rewritten paragraph. You do the editing. (There's a "Try this" line per flag, not a "replace with" line.)
+- **It teaches instead of fixing.** The default output is a diagnosis — what's wrong and why — not a rewritten paragraph. You do the editing. (There's a "Try this" line per flag, not a "replace with" line.)
 - **It's format-aware.** A Slack message and a formal proposal aren't held to the same bar. Bullets are correct on a slide and a violation in a narrative doc — the skill knows the difference instead of flagging everything the same way.
 - **It can learn your voice.** Optionally, it'll build a lightweight fingerprint from your own writing and flag spots that don't sound like *you* specifically — on top of, not instead of, the generic AI-tell check.
+- **It works with AI tool of your choice** Download (instructions below) the skill and use it in the tool of your choice - I've tested it for Claude, Codex, Kiro, and Amazon Quick. 
 
 ## What it checks for
 
 Four categories of tells, covered in [`references/patterns.md`](references/patterns.md) — several drawing on and using terminology from Wikipedia's community-maintained essay [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), including its explicit caution that none of these patterns, alone or combined, proves a piece of text was AI-written:
 
-1. **Vocabulary tics** — "leverage," "unlock," "seamless," "robust," and the rest of the corporate-verb family that stands in for a concrete action.
-2. **Sentence-shape tics** — "It's not just X, it's Y," rule-of-three-itis, hedge-then-overclaim, false balance.
-3. **Structural tics** — forced bullet-ification, a header on every paragraph, unnecessary "in conclusion" wrap-ups.
-4. **Empty-calorie content** — sentences that restate the one before them, filler transitions, generic scene-setting, fake specificity.
+1. **Sentence-shape tics** — "It's not just X, it's Y," rule-of-three-itis, hedge-then-overclaim, false balance.
+2. **Structural tics** — forced bullet-ification, a header on every paragraph, unnecessary "in conclusion" wrap-ups.
+3. **Empty-calorie content** — sentences that restate the one before them, filler transitions, generic scene-setting, fake specificity.
+4. **Vocabulary tics** — "leverage," "delve," "seamless," "robust," and the rest of the corporate-verb family that stands in for a concrete action. (disclaimer: I'm guilty of using these in my writing even before AI)
 
 On top of the base pattern check:
 
@@ -127,12 +128,4 @@ Open `references/custom-rules.md` — it's a blank template with one worked exam
 
 This is entirely local to your copy of the skill. If you install this repo on a work machine and want to add your company's brand guidelines, edit `custom-rules.md` there — it won't touch anyone else's copy, and you don't need to publish your company's rules back to this public repo unless you want to.
 
-## First time publishing to GitHub? Quick primer
-
-If this is genuinely your first repo, here's the short version:
-
-1. **Create the repo:** on github.com, click the **+** in the top right → **New repository**. Give it a name (`unslop` works), leave it public if you want others to use it, and click **Create repository**.
-2. **Upload the files:** on the new repo's page, click **uploading an existing file** (or **Add file → Upload files**). Drag in `SKILL.md`, this `README.md`, and the `references/` folder (with its four files inside).
-3. **Commit:** scroll down, add a short message like "Initial version," and click **Commit changes**.
-
-That's the whole thing — no command line required for a simple upload like this. If you want people to install it with the `skills.sh` installer commands other repos use (`npx skills add yourname/unslop`), the file layout you already have (`SKILL.md` at the root, `references/` alongside it) is exactly what that tool expects — nothing extra to set up.
+## Made with Love <3
