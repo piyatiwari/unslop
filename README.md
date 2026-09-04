@@ -1,7 +1,9 @@
 # Unslop
 ### AI Slop Detector
 
-Hi! I'm a marketer and I love using AI to get past the blank page and writers block. But I also like my own writing style and cringe at the tell tale signs of AI writing. So I created this - Unslop is a content or prose auditor for marketers and all knowledge workers. Paste in your draft — an email, a LinkedIn post, a deck, a PRFAQ — and it flags the tics that make writing read as machine-generated (aka AI slop), explains why each one is a tell, and coaches you to fix it yourself instead of quietly rewriting it for you (my favorite feature)
+Hi! I'm a marketer and I love using AI to get past the blank page and writers block. But I also like my own writing style and cringe at the tell tale signs of AI writing. So I created this - Unslop is a content or prose auditor for marketers and all knowledge workers. 
+
+Paste or upload your draft of an email, a LinkedIn post, a deck, a PRFAQ, a blog or ebook - and it flags the tics that make writing read as machine-generated (aka AI slop), explains why each one is a tell, and coaches you to fix it yourself instead of quietly rewriting it for you (my favorite feature)
 
 ## Why this exists
 
